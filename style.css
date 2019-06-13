@@ -1,3 +1,6 @@
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
 html{
   height: 100%;
   font-family: monospace;
@@ -7,8 +10,19 @@ html{
   padding: 0;
   height: 100%;
   width: 100%;
-  display: flex;
   font-size: 35px;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.type{
+	border-right: .1em solid;
+	width: 9em; /* fallback */
+	width: 10ch; /* # of chars */
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 2s steps(10, end), /* # of steps = # of chars */
+	           blink-caret .5s step-end infinite alternate;
 }
