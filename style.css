@@ -24,7 +24,6 @@ html{
 	white-space: nowrap;
 	overflow: hidden;
 	animation: typing 2s steps(11, end), /* # of steps = # of chars */
-	           blink-caret 1s ease-in-out 5 alternate,
-             blink-fade 2s ease-out 4s;
+	           blink-caret 1s ease-in-out 3 alternate,
+             blink-fade 2s ease-out 3s;
 }
-
