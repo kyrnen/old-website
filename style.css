@@ -20,10 +20,10 @@ html{
 .type{
 	border-right: .1em solid;
 	width: 9em; /* fallback */
-	width: 11ch; /* # of chars */
+	width: 10ch; /* # of chars */
 	margin: 2em 1em;
 	white-space: nowrap;
 	overflow: hidden;
-	animation: typing 2s steps(11, end), /* # of steps = # of chars */
+	animation: typing 2s steps(10, end), /* # of steps = # of chars */
 	           blink-caret .5s step-end infinite alternate;
 }
