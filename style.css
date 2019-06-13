@@ -16,7 +16,6 @@ html{
   justify-content: center;
   align-items: center;
 }
-
 .type{
 	border-right: .1em solid transparent;
 	width: 9em; /* fallback */
