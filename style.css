@@ -1,5 +1,6 @@
 html{
   height: 100%;
+  font-family: monospace;
 }
 .home{
   margin:0;
@@ -7,7 +8,6 @@ html{
   height: 100%;
   width: 100%;
   display: flex;
-  font-family: monospace;
   justify-content: center;
   align-items: center;
 }
