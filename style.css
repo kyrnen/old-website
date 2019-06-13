@@ -1,11 +1,11 @@
 @keyframes typing { from { width: 0; } }
-@keyframes blink-caret { 50% { border-color: transparent; } }
+@keyframes blink-caret {50%{border-color: black}}
+@keyframes blink-fade {50% {border-color: #00BFFF;}}
 
 html{
   height: 100%;
   font-family: monospace;
 }
-
 .home{
   margin:0;
   padding: 0;
@@ -18,12 +18,14 @@ html{
 }
 
 .type{
-	border-right: .1em solid;
+	border-right: .1em solid transparent;
 	width: 9em; /* fallback */
-	width: 10ch; /* # of chars */
+	width: 11ch; /* # of chars */
 	margin: 2em 1em;
 	white-space: nowrap;
 	overflow: hidden;
-	animation: typing 2s steps(10, end), /* # of steps = # of chars */
-	           blink-caret .5s step-end infinite alternate;
+	animation: typing 2s steps(11, end), /* # of steps = # of chars */
+	           blink-caret 1s ease-in-out 5 alternate,
+             blink-fade 2s ease-out 4s;
 }
+
