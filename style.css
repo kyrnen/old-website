@@ -6,6 +6,10 @@ html{
   height: 100%;
   font-family: monospace;
 }
+.format{
+  display: flex;
+  flex-direction: row;
+}
 .home{
   margin:0;
   padding: 0;
@@ -16,14 +20,38 @@ html{
   justify-content: center;
   align-items: center;
 }
+.bar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .type{
 	border-right: .1em solid transparent;
 	width: 9em; /* fallback */
 	width: 11ch; /* # of chars */
-	margin: 2em 1em;
+	margin: 2em 0.2em;
 	white-space: nowrap;
 	overflow: hidden;
 	animation: typing 2s steps(11, end), /* # of steps = # of chars */
 	           blink-caret 1s ease-in-out 3 alternate,
              blink-fade 2s ease-out 3s;
+}
+/* .contact-info{
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+}
+.box{
+  width: 50px;
+  height: 50px;
+  border: .8px solid black;
+  border-radius: 50%;
+  margin: 5px;
+} */
+.icon{
+  width: 75px;
+  height: 75px;
+  background: black;
+  border: .8px solid black;
+  border-radius: 50%;
 }
