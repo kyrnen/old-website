@@ -2,6 +2,10 @@
 @keyframes blink-caret {50%{border-color: black}}
 @keyframes blink-fade {50% {border-color: #00BFFF;}}
 
+@keyframes icon-fade {0% {background: transparent} 
+                      50% {background: #00BFFF} 
+                      100% {background: lightgrey}}
+
 html{
   height: 100%;
   font-family: monospace;
@@ -36,6 +40,15 @@ html{
 	           blink-caret 1s ease-in-out 3 alternate,
              blink-fade 2s ease-out 3s;
 }
+.icon{
+  width: 75px;
+  height: 75px;
+  background: lightgrey;
+  display: none;
+  border-radius: 50%;
+  animation: icon-fade 1s ease-in-out;
+}
+
 /* .contact-info{
   position: absolute;
   bottom: 2%;
@@ -48,10 +61,3 @@ html{
   border-radius: 50%;
   margin: 5px;
 } */
-.icon{
-  width: 75px;
-  height: 75px;
-  background: black;
-  border: .8px solid black;
-  border-radius: 50%;
-}
