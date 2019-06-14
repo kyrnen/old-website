@@ -52,8 +52,8 @@ html{
   border-radius:50%;
 }
 .contact-icon{
-  width: 0.769em;
-  height: 0.769em;
+  width: 5vh;
+  height: 5vh;
 }
 .contact-info{
   position: absolute;
@@ -61,8 +61,8 @@ html{
   right: 2%;
 }
 .box{
-  width: 0.769em;
-  height: 0.769em;
+  width: 5vh;
+  height: 5vh;
   margin: 5px;
 	display: flex;
   align-items: center;
