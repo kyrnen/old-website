@@ -51,7 +51,11 @@ html{
   height: 60px;
   border-radius:50%;
 }
-
+.contact-icon{
+  width: 25px;
+  height: 25px;
+  border-radius:50%;
+}
 .contact-info{
   position: absolute;
   bottom: 2%;
