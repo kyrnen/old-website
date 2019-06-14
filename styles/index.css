@@ -26,14 +26,14 @@ html{
   justify-content: space-between;
 }
 .type{
-  border-right: .1em solid transparent;
-  width: 9em; /* fallback */
-  width: 11ch; /* # of chars */
-  margin: 2em 0.2em;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 2s steps(11, end), /* # of steps = # of chars */
-             blink-caret 1s ease-in-out 3 alternate,
+	border-right: .1em solid transparent;
+	width: 9em; /* fallback */
+	width: 11ch; /* # of chars */
+	margin: 2em 0.2em;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 2s steps(11, end), /* # of steps = # of chars */
+	           blink-caret 1s ease-in-out 3 alternate,
              blink-fade 2s ease-out 3s;
 }
 .button{
@@ -52,8 +52,8 @@ html{
   border-radius:50%;
 }
 .contact-icon{
-  width: 1.563em;
-  height: 1.563em;
+  width: 25px;
+  height: 25px;
 }
 .contact-info{
   position: absolute;
@@ -61,10 +61,10 @@ html{
   right: 2%;
 }
 .box{
-  width: 1.563em;
-  height: 1.563em;
+  width: 25px;
+  height: 25px;
   margin: 5px;
-  display: flex;
+	display: flex;
   align-items: center;
   justify-content: center;
 }
