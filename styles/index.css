@@ -37,8 +37,8 @@ html{
              blink-fade 2s ease-out 3s;
 }
 .button{
-  width: 75px;
-  height: 75px;
+  width: 2.12em;
+  height: 2.12em;
   background: lightgrey;
 /*   display: none; */
   border-radius: 50%;
@@ -47,8 +47,8 @@ html{
   justify-content:center;
 }
 .icon{
-  width: 60px;
-  height: 60px;
+  width: 2.12em;
+  height: 2.12em;
   border-radius:50%;
 }
 .contact-icon{
