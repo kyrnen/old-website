@@ -1,6 +1,32 @@
 @keyframes typing { from { width: 0; } }
 @keyframes blink-caret {50%{border-color: black}}
 @keyframes blink-fade {50% {border-color: #00BFFF;}}
+@keyframes moveRight {
+  0% {
+    transform: translateX(-60px);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes moveUp {
+  50% {
+    transform: translateY(-50px);
+  }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@for $i from 1 through 4 {
+  .button:nth-child(#{$i}) {
+    animation: fadeIn .5s ease-in 3s, moveRight .5s cubic-bezier(1,0,0,.5) 3s, moveUp 1s ease-in-out 3s+($i * 320ms/3.75);
+  }
+}
 
 html{
   height: 100%;
@@ -20,11 +46,6 @@ html{
   justify-content: center;
   align-items: center;
 }
-.bar{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .type{
 	border-right: .1em solid transparent;
 	width: 9em; /* fallback */
@@ -36,6 +57,11 @@ html{
 	           blink-caret 1s ease-in-out 3 alternate,
              blink-fade 2s ease-out 3s;
 }
+.bar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .button{
   width: 2.12em;
   height: 2.12em;
@@ -45,6 +71,7 @@ html{
   display: flex;
   align-items: center;
   justify-content:center;
+	visibility: hidden;
 }
 .icon{
   width: 2.12em;
