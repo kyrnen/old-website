@@ -29,8 +29,13 @@
   50% {
     transform: translateY(-50px);
   }
-   90%{
+}
+@keyframes transitionBlue{
+  60%{
     background: #00bfff;
+  }
+  100%{
+    background: lightgrey;
   }
 }
 @keyframes fadeIn {
@@ -42,19 +47,19 @@
   }
 }
 .button:nth-child(1) {
-  animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, bounce 1s ease-in-out 3.0853333333s;
+  animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, transitionBlue 1s ease-in-out 3.0853333333s, bounce 1s ease-in-out 3.0853333333s;
 }
 
 .button:nth-child(2) {
-  animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, bounce 1s ease-in-out 3.1706666667s;
+  animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, transitionBlue 1s ease-in-out 3.1706666667s, bounce 1s ease-in-out 3.1706666667s;
 }
 
 .button:nth-child(3) {
-  animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, bounce 1s ease-in-out 3.256s;
+  animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, transitionBlue 1s ease-in-out 3.256s, bounce 1s ease-in-out 3.256s;
 }
 
 .button:nth-child(4) {
-  animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, bounce 1s ease-in-out 3.3413333333s;
+  animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, transitionBlue 1s ease-in-out 3.3413333333s, bounce 1s ease-in-out 3.3413333333s;
 }
 
 html {
