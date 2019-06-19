@@ -1,17 +1,72 @@
-@keyframes typing { from { width: 0; } }
-@keyframes blink-caret {50%{border-color: black}}
-@keyframes blink-fade {50% {border-color: #00BFFF;}}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink-caret {
+  50% {
+    border-color: black;
+  }
+}
+@keyframes blink-fade {
+  50% {
+    border-color: #00bfff;
+  }
+}
 
-html{
+@keyframes moveRight {
+  0% {
+    transform: translateX(-60px);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes bounce {
+  50% {
+    transform: translateY(-50px);
+  }
+   90%{
+    background: #00bfff;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.button:nth-child(1) {
+  animation: fadeIn 0.5s ease-in 3s, moveRight 0.5s cubic-bezier(1, 0, 0, 0.5) 3s, bounce 1s ease-in-out 3.0853333333s;
+}
+
+.button:nth-child(2) {
+  animation: fadeIn 0.5s ease-in 3s, moveRight 0.5s cubic-bezier(1, 0, 0, 0.5) 3s, bounce 1s ease-in-out 3.1706666667s;
+}
+
+.button:nth-child(3) {
+  animation: fadeIn 0.5s ease-in 3s, moveRight 0.5s cubic-bezier(1, 0, 0, 0.5) 3s, bounce 1s ease-in-out 3.256s;
+}
+
+.button:nth-child(4) {
+  animation: fadeIn 0.5s ease-in 3s, moveRight 0.5s cubic-bezier(1, 0, 0, 0.5) 3s, bounce 1s ease-in-out 3.3413333333s;
+}
+
+html {
   height: 100%;
   font-family: monospace;
 }
-.format{
+.format {
   display: flex;
   flex-direction: row;
 }
-.home{
-  margin:0;
+.home {
+  margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
@@ -20,52 +75,65 @@ html{
   justify-content: center;
   align-items: center;
 }
-.bar{
+.bar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.type{
-	border-right: .1em solid transparent;
-	width: 9em; /* fallback */
-	width: 11ch; /* # of chars */
-	margin: 2em 0.2em;
-	white-space: nowrap;
-	overflow: hidden;
-	animation: typing 2s steps(11, end), /* # of steps = # of chars */
-	           blink-caret 1s ease-in-out 3 alternate,
-             blink-fade 2s ease-out 3s;
+.type {
+  border-right: 0.1em solid transparent;
+  /* fallback */
+  width: 11ch;
+  /* # of chars */
+  margin: 2em 0.2em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(11, end), blink-caret 1s ease-in-out 3 alternate, blink-fade 2s ease-out 3s;
+  /* # of steps = # of chars */
 }
-.button{
-  width: 2.12em;
-  height: 2.12em;
+.button {
+  width: 75px;
+  height: 75px;
   background: lightgrey;
-/*   display: none; */
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
+  visibility: hidden; 
 }
-.icon{
+.icon {
   width: 2.12em;
   height: 2.12em;
-  border-radius:50%;
+  border-radius: 50%;
 }
-.contact-icon{
-  width: 0.769em;
-  height: 0.769em;
+.caption {
+  width: 60px;
+  height: 60px;
+  display: table-cell;
+  border: solid black;
+  vertical-align: middle;
 }
-.contact-info{
+.contact-info {
   position: absolute;
   bottom: 2%;
   right: 2%;
 }
-.box{
+.contact-icon {
   width: 0.769em;
   height: 0.769em;
+  border-radius: 50%;
+}
+.new-contact-icon {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+}
+.box {
+  width: 0.769em;
+  height: 0.769em;
+  border-radius: 50%;
   margin: 5px;
-	display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-
