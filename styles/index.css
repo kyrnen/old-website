@@ -58,6 +58,21 @@
 .button:nth-child(4) {
   animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, transitionBlue 1s linear 3.5657142857s, bounce 1s ease-in-out 3.3413333333s;
 }
+.button:nth-child(1):hover{
+  background: #00bfff;
+}
+.button:nth-child(2):hover{
+  background: #f2d736;
+}
+.button:nth-child(3):hover{
+  background: red;
+}
+.button:nth-child(4):hover{
+  background: orange;
+}
+.icon:hover{
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(349deg) brightness(106%) contrast(101%);
+}
 html {
   height: 100%;
   font-family: monospace;
