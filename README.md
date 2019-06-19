@@ -1,8 +1,7 @@
 # kyrnen.github.io
 
 ## Synopsis
-I wanted to take a stab at creating a  
-bsite for myself--partly because I needed a place to show off my projects, and partly because I have been doing so much web development at my internship that I felt like I could probably make one I would be satisfied with and add more value to it (ie: maybe adding a blog eventually for things I do). I tried a couple of times before using bootstrap, but I didn't end up liking how it felt when I went on the page, so I thought I would try to do it myself from the start.
+I wanted to take a stab at creating a website for myself--partly because I needed a place to show off my projects, and partly because I have been doing so much web development at my internship that I felt like I could probably make one I would be satisfied with and add more value to it (ie: maybe adding a blog eventually for things I do). I tried a couple of times before using bootstrap, but I didn't end up liking how it felt when I went on the page, so I thought I would try to do it myself from the start.
 
 ### Day 1
 Tried boostrap and a couple of things and realized it really didn't feel like it was for me. I wanted something more simple, and maybe a little more versatile, so I remade this directory and tried to do it from scratch.
