@@ -25,4 +25,8 @@ I found some icons that I felt would be suitable for the aesthetic that I am goi
 A new problem that I have run into is that the buttons are too small to click on a phone-sized screen. I have adjusted from px to em, but there were similar results, and adjusting the size depending on the vh (vertical height) did not produce the outcome I was looking for. This will be a problem for tomorrow. 
 
 # Day 3
-I ended up doing a lot of research on the navigation bar to figure out what would be the best way to create the bouncing animation.
+I ended up doing a lot of research on the navigation bar to figure out what would be the best way to create the bouncing animation. One of the first things I needed to do for sure was find a way to remove the buttons before the animation occured, as I wanted them to look like they just appeared. I ended up using setTimeOut to create this delay.
+
+After that, it was a lot of experimenting. My goal was to have all the buttons come out moving to the right and kind of make a circle that looped back to the center (or if possible went straight up and back down at the end). I originally found a really nice source of animations from animate.css, but when I tried to modify those, it was not creating the result that I wanted. I decided to just stick with it for the time being and move onto stagger, because I found that there were a lot of different ways to do it. I found a really good codepen with an example of a similar stagger to what I wanted and ended up scrapping the original single bounce method. Then I moved into creating separate animations for each direction.
+
+I had to mess with timing quite a bit because it was very slow, but now, it seems better than when I started.
