@@ -34,9 +34,6 @@
   60%{
     background: #00bfff;
   }
-  100%{
-    background: lightgrey;
-  }
 }
 @keyframes fadeIn {
   0% {
