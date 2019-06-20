@@ -30,8 +30,8 @@
     transform: translateY(-50px);
   }
 }
-@keyframes transitionBlue{
-  70%{
+@keyframes transitionBlue {
+   70%{
     background: #00bfff;
   }
 }
@@ -43,6 +43,28 @@
     opacity: 1;
   }
 }
+
+#about:hover{
+  background: #00bfff;
+}
+#projects:hover{
+  background: #f2d736;
+}
+#hobbies:hover{
+  background: red;
+}
+#resume:hover{
+  background: orange;
+}
+
+.button:hover + .description {
+  opacity: 1;
+}
+
+.button:hover .icon{
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(349deg) brightness(106%) contrast(101%);
+}
+
 .button:nth-child(1) {
   animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, transitionBlue 1s linear 3.2914285714s, bounce 1s ease-in-out 3.0853333333s;
 }
@@ -58,21 +80,7 @@
 .button:nth-child(4) {
   animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, transitionBlue 1s linear 3.5657142857s, bounce 1s ease-in-out 3.3413333333s;
 }
-.button:nth-child(1):hover{
-  background: #00bfff;
-}
-.button:nth-child(2):hover{
-  background: #f2d736;
-}
-.button:nth-child(3):hover{
-  background: red;
-}
-.button:nth-child(4):hover{
-  background: orange;
-}
-.icon:hover{
-  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(349deg) brightness(106%) contrast(101%);
-}
+
 html {
   height: 100%;
   font-family: monospace;
@@ -82,6 +90,8 @@ html {
   flex-direction: row;
 }
 .home {
+  position: relative;
+  left: 8%;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -94,7 +104,7 @@ html {
 .bar {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .type {
   border-right: 0.1em solid transparent;
@@ -122,23 +132,17 @@ html {
   height: 2.12em;
   border-radius: 50%;
 }
-.caption {
-  width: 60px;
-  height: 60px;
-  display: table-cell;
-  border: solid black;
-  vertical-align: middle;
-}
 .contact-info {
   position: absolute;
   bottom: 2%;
-  right: 2%;
+  right: 10%;
 }
 .contact-icon {
   width: 0.769em;
   height: 0.769em;
+  border-radius: 50%;
 }
-.box {
+.contact-button {
   width: 0.769em;
   height: 0.769em;
   border-radius: 50%;
@@ -146,4 +150,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.description{
+  margin-left: .5em;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
 }
