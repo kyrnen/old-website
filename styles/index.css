@@ -103,6 +103,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 75px;
 }
 .type {
   border-right: 0.1em solid transparent;
@@ -154,4 +155,5 @@ html {
   justify-content: space-around;
   align-items: center;
   opacity: 0;
+  white-space: nowrap;
 }
