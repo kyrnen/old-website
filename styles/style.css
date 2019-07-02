@@ -1,6 +1,5 @@
 h3 {
   margin-vertical: 1.6em;
-  font-size: 3em;
 }
 
 html {
@@ -78,11 +77,9 @@ html {
 }
 
 .header {
-  font-size: 2.917em;
   padding-bottom: 5%;
 }
 
 #content{
-  font-size: 1.1em;
   margin-vertical: 1.2em;
 }
