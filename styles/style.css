@@ -3,6 +3,13 @@ html {
   font-family: monospace;
 }
 
+.bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 75px;
+}
+
 .contact-info {
   position: absolute;
   bottom: 2%;
@@ -21,4 +28,20 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.format {
+  display: flex;
+  flex-direction: row;
+}
+
+.home {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
