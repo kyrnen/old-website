@@ -34,7 +34,7 @@ html {
   width: 60%;
   justify-content: center;
   position: absolute;
-  top: 20%;
+  top: 15%;
 }
 
 .contact-info {
@@ -74,4 +74,5 @@ html {
 
 .header {
   font-size: 35px;
+  padding-bottom: 5%;
 }
