@@ -27,6 +27,14 @@ html {
   border-radius: 50%;
 }
 
+.central {
+  margin: 0;
+  padding-left: 10%;
+  height: 100%;
+  width: 60%;
+  justify-content: center;
+}
+
 .contact-info {
   position: absolute;
   bottom: 2%;
