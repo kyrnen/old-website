@@ -81,6 +81,16 @@
   animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, transitionBlue 1s linear 3.5657142857s, bounce 1s ease-in-out 3.3413333333s;
 }
 
+.home {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .type {
   border-right: 0.1em solid transparent;
