@@ -2,3 +2,23 @@ html {
   height: 100%;
   font-family: monospace;
 }
+
+.contact-info {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+}
+
+.contact-icon {
+  width: 0.769em;
+  height: 0.769em;
+}
+
+.contact-button {
+  width: 0.769em;
+  height: 0.769em;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
