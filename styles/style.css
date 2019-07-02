@@ -80,6 +80,17 @@ html {
   padding-bottom: 5%;
 }
 
+
 #content{
   margin-vertical: 1.2em;
+}
+
+#blue {
+  color: #00bfff
+}
+#yellow {
+  color: #f2d736
+}
+#red {
+  color: red
 }
