@@ -1,0 +1,77 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink-caret {
+  50% {
+    border-color: black;
+  }
+}
+@keyframes blink-fade {
+  50% {
+    border-color: #00bfff;
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-60px);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes bounce {
+  50% {
+    transform: translateY(-50px);
+  }
+}
+@keyframes transitionBlue {
+   70%{
+    background: #00bfff;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*#about {
+  animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, transitionBlue 1s linear 3.2914285714s, bounce 1s ease-in-out 3.0853333333s;
+}
+
+#projects {
+  animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, transitionBlue 1s linear 3.3828571429s, bounce 1s ease-in-out 3.1706666667s;
+}
+
+#hobbies {
+  animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, transitionBlue 1s linear 3.4742857143s, bounce 1s ease-in-out 3.256s;
+}
+
+#resume {
+  animation: fadeIn 1s ease-in 3s, moveRight 0.7s cubic-bezier(1, 0, 0, 0.5) 3s, transitionBlue 1s linear 3.5657142857s, bounce 1s ease-in-out 3.3413333333s;
+}*/
+
+/*.button:hover + .description {
+  opacity: 1;
+}*/
+
+type{
+    /*border-right: 0.1em solid transparent;*/
+    /* fallback */
+    /*width: 10ch;*/
+    /* # of chars */
+    /*margin: 2em .5em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(11, end), blink-caret 1s ease-in-out 3 alternate, blink-fade 2s ease-out 3s;*/
+    /* # of steps = # of chars */
+}
