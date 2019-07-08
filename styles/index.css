@@ -1,11 +1,11 @@
-#about:hover{
-  background: #00bfff;
+#about:hover {
+    background: #f2d736;
 }
-#projects:hover{
-  background: #f2d736;
+#projects:hover {
+    background: #f14141;
 }
 #hobbies:hover {
-    background: #f14141;
+    background: #00bfff;
 }
 #resume:hover {
     background: #333333;
