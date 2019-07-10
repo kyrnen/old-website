@@ -12,10 +12,13 @@ html {
   flex-direction: column;
   justify-content: space-between;
   width: 75px;
+  min-height: 40%;
 }
 
 .button {
   min-width: 75px;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
   height: 75px;
   background: lightgrey;
   border-radius: 50%;
@@ -72,7 +75,7 @@ html {
 .format {
   display: flex;
   flex-direction: row;
-  height: 40%;
+  align-items: center;
 }
 
 #blue {
