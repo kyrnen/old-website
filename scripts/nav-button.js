@@ -1,7 +1,6 @@
-window.customElements.define('d-nav-button', class extends HTMLElement{
+window.customElements.define('nav-button', class extends HTMLElement{
 	constructor() {
 		super();
-		console.log("Inside Constructor")
 		this.innerHTML = this.id === "desktop" ? null : `
 		<div class = "format">
           <div id = ${this.slot} class = "button">
@@ -16,5 +15,5 @@ window.customElements.define('d-nav-button', class extends HTMLElement{
 		}
 });
 
-const button = document.querySelector('d-nav-button');
+const button = document.querySelector('nav-button');
 console.dir(button);
