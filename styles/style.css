@@ -7,6 +7,31 @@ html {
     font-family: 'Slabo 13px', serif;
 }
 
+.bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75px;
+  min-height: 40%;
+}
+
+.button {
+  min-width: 75px;
+  margin-top: 6.5px;
+  margin-bottom: 6.5px;
+  height: 75px;
+  background: lightgrey;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
 .central {
   margin: 0;
   padding-left: 10%;
@@ -15,6 +40,36 @@ html {
   justify-content: center;
   position: absolute;
   top: 15%;
+}
+
+.contact-info {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+}
+
+.contact-icon {
+  width: 0.769em;
+  height: 0.769em;
+}
+
+.contact-button {
+  width: 0.769em;
+  height: 0.769em;
+  margin: 6.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description{
+  margin-left: 1.5em;
+  height: 75px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .format {
