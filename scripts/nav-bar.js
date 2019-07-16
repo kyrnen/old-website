@@ -1,4 +1,5 @@
-window.customElements.define('nav-bar', class extends HTMLElement {
+window.customElements.define('nav-bar', 
+class extends HTMLElement {
 	constructor() {
 		super();
 		this.innerHTML = `
