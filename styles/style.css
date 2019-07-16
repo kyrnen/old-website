@@ -17,26 +17,6 @@ html {
   top: 15%;
 }
 
-.contact-info {
-  position: absolute;
-  bottom: 2%;
-  right: 2%;
-}
-
-.contact-icon {
-  width: 0.769em;
-  height: 0.769em;
-}
-
-.contact-button {
-  width: 0.769em;
-  height: 0.769em;
-  margin: 6.5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .description{
   margin-left: 1.5em;
   height: 75px;
