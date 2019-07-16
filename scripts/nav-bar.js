@@ -1,5 +1,4 @@
-window.customElements.define('nav-bar', 
-class extends HTMLElement {
+class NavBar extends HTMLElement {
 	constructor() {
 		super();
 		this.innerHTML = `
@@ -11,7 +10,9 @@ class extends HTMLElement {
 		</div>
 	  `
 	}
-});
+}
+
+window.customElements.define('nav-bar', NavBar);
 
 const navBar = document.querySelector('nav-bar');
 console.dir(navBar);
