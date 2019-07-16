@@ -1,4 +1,5 @@
-window.customElements.define('nav-button', class extends HTMLElement{
+window.customElements.define('nav-button', 
+class extends HTMLElement{
 	constructor() {
 		super();
 		this.innerHTML = `
@@ -11,7 +12,8 @@ window.customElements.define('nav-button', class extends HTMLElement{
           <div class = "description">
             ${this.innerText}
           </div>
-        </div>`
+        </div>
+		`
 		}
 });
 
