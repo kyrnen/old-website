@@ -2,7 +2,16 @@ class NavBar extends HTMLElement {
 	constructor() {
 		super();
 		this.innerHTML = `
-		<div class = "bar">
+		<style>
+			.navbar {
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: space-between;
+			  width: 75px;
+			  min-height: 40%;
+			}
+		</style>
+		<div class = "navbar">
 			<nav-button slot ="about">About Me</nav-button>
 			<nav-button slot ="projects">Projects</nav-button>
 			<nav-button slot ="hobbies">Hobbies</nav-button>
