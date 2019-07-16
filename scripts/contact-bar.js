@@ -4,38 +4,22 @@ class extends HTMLElement {
 		super();
 		this.innerHTML = 
 		`
-		<div class = "contact-info">
+		<style>
+			.contact-bar {
+			  position: absolute;
+			  bottom: 2%;
+			  right: 2%;
+			}
+		</style>
+
+		<div class = "contact-bar">
 		  <div class = "format">
-			<div class = "contact-button">
-			  <a href = "mailto:lam.angelak@gmail.com">
-				<img src = "icons/mail.svg" class = "contact-icon">
-			  </a>
-			</div>
-			<div class = "contact-button">
-			  <a href = "https://www.linkedin.com/in/angelaklam/">
-				<img src = "icons/linkedin.svg" class = "contact-icon">
-			  </a>
-			</div>
-			<div class = "contact-button">
-			  <a href = "https://github.com/kyrnen">
-				<img src = "icons/github.svg" class = "contact-icon">
-			  </a>
-			</div>
-			<div class = "contact-button">
-			  <a href = "https://twitter.com/angklam">
-				<img src = "icons/twitter.svg" class = "contact-icon">
-			  </a>
-			</div>
-			<div class = "contact-button">
-			  <a href = "https://www.instagram.com/angelaklam/">
-				<img src = "icons/instagram.svg" class = "contact-icon">
-			  </a>
-			</div>
-			<div class = "contact-button">
-			  <a href = "https://www.twitch.tv/enkyr">
-				<img src = "icons/twitch.svg" class = "contact-icon" id="twitch">
-			  </a>
-			</div>
+			<contact-button id ="mail">mailto:lam.angelak@gmail.com</contact-button>
+			<contact-button id ="linkedin">https://www.linkedin.com/in/angelaklam/</contact-button>
+			<contact-button id ="github">https://github.com/kyrnen</contact-button>
+			<contact-button id ="twitter">https://twitter.com/angklam</contact-button>
+			<contact-button id ="instagram">https://www.instagram.com/angelaklam/</contact-button>
+			<contact-button id ="twitch">https://www.twitch.tv/enkyr</contact-button>
 		  </div>
 		</div>
 		`
