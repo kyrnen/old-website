@@ -1,7 +1,7 @@
 window.customElements.define('nav-button', class extends HTMLElement{
 	constructor() {
 		super();
-		this.innerHTML = this.id === "desktop" ? null : `
+		this.innerHTML = `
 		<div class = "format">
           <div id = ${this.slot} class = "button">
             <a href = "scripts/${this.slot}.html" >
