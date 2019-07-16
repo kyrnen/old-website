@@ -7,31 +7,6 @@ html {
     font-family: 'Slabo 13px', serif;
 }
 
-.bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 75px;
-  min-height: 40%;
-}
-
-.button {
-  min-width: 75px;
-  margin-top: 6.5px;
-  margin-bottom: 6.5px;
-  height: 75px;
-  background: lightgrey;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-icon {
-  width: 1.5em;
-  height: 1.5em;
-}
-
 .central {
   margin: 0;
   padding-left: 10%;
