@@ -1,8 +1,9 @@
 window.customElements.define('nav-button', class extends HTMLElement{
 	constructor() {
 		super();
-		this.innerHTML = this.id === "desktop" ? null : `
 
+		this.innerHTML = 
+		`
 		<style>
 			.button {
 			  min-width: 75px;

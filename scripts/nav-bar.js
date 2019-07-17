@@ -16,7 +16,17 @@ class extends HTMLElement {
 			<nav-button slot ="about">About Me</nav-button>
 			<nav-button slot ="projects">Projects</nav-button>
 			<nav-button slot ="hobbies">Hobbies</nav-button>
-			<nav-button slot="resume">R&#0233;sum&#0233;</nav-button>
+			
+			<div class = "format">
+			  <div id = resume class = "button">
+				<a href = "https://kyrnen.github.io/2019 Angela Lam Resume.pdf" target = "_blank">
+				  <img src="icons/resume.svg" class = "button-icon">
+				</a>
+			  </div>
+			  <div class = "description">
+				R&#0233;sum&#0233;
+			  </div>
+			</div>
 		</div>
 	  `
 	}
